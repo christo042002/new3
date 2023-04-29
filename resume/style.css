@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #141a34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.useful-links{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+}
+.useful-links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: transparent;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    color: white;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #090808;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #f7ecec;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.input-group span i{
+    color: seagreen;
+}
+
+
+/*animation*/
+*{
+    margin: 0px;
+    padding: 0px;  
+  }
+  body{
+     background-color: rgb(34, 5, 60);
+     position: relative;
+     height: 100vh;
+     font-family: sans-serif;
+  }
+  ul li{
+      position: absolute;
+      border: 1px solid whitesmoke;
+      width: 30px;
+      height: 30px;
+      list-style: none;
+      opacity: 0;
+      background: #fff;
+  }
+  .square li{
+      top: 50vh;
+      
+      animation: square 10s linear;
+  }
+  .square li:nth-child(2){
+      top: 80vh;
+      left: 10vw;
+      animation-delay: 2s;
+  }
+  .square li:nth-child(3){
+      top: 80vh;
+      
+      animation-delay: 4s;
+  }
+  
+  .square li:nth-child(5){
+      top: 10vh;
+      left: 10vw;
+      animation-delay: 8s;
+  }
+  
+  @keyframes square{
+      0%{
+          transform: scale(0) rotateY(0deg);
+          opacity: 1;
+      }
+      100%{
+          transform: scale(5)  rotateY(1000deg);
+          opacity: 0;
+      }
+  }
+  
+  .circle li{
+      bottom: 0;
+      left: 15vw;
+      animation: circle 10s linear infinite;
+  }
+  .circle li:nth-child(2){
+      left: 35vw;
+      animation-delay: 2s;
+  }
+  
+  @keyframes circle{
+      0%{
+          transform: scale(0) rotate(0deg);
+          opacity: 1;
+          bottom: 0;
+          border-radius: 30;
+      
+      }
+      100%{
+          transform: scale(5) rotate(1000deg);
+          opacity: 0;
+          bottom: 90vh;
+          border-radius: 50%;
+      }
+  }
+  
+  .game1{
+      padding-left: 130px;
+      border-radius: 20px;
+      position: relative;
+  }
+  .card{
+      background: transparent;
+      border: none;
+  }
+  .card1 img{
+      border-radius: 20px;
+  }
+  .card2 img{
+      border-radius: 20px;
+      position: relative;right: 22px;
+  }
+  .card3 img{
+      border-radius: 20px;
+  }
+  .card4 img{
+      border-radius: 20px;
+  }
+
+
+/*validation*/
+.input-group span{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}
+  
